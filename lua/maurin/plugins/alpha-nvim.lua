@@ -38,7 +38,7 @@ return {
 		-- stylua: ignore
 		dashboard.section.buttons.val = {
 			dashboard.button("r", " " .. " Recent files",    "<cmd>Telescope oldfiles<cr>"),
-			dashboard.button("c", " " .. " Config",          "<cmd>edit ~/.config/nvim<cr>"),
+			dashboard.button("c", " " .. " Config",          "<cmd>:~/.config/nvim<cr>"),
 			dashboard.button("q", " " .. " Quit",            "<cmd> qa <cr>"),
 		}
 		for _, button in ipairs(dashboard.section.buttons.val) do
