@@ -29,9 +29,9 @@ return {
 			ensure_installed = {
 				"html", -- html
 				"bashls", -- bash
-				"asp_grep", -- C
+				-- "asp_grep", -- C
 				"cssls", -- css
-				"asm-lsp", -- asm
+				"asm_lsp", -- asm
 				"tailwindcss", -- css
 				"lua_ls", -- lua
 				"pyright", -- python
@@ -44,7 +44,7 @@ return {
 				"stylua", -- lua
 				"isort", -- python
 				"black", -- python
-				"asmformat", -- asm
+				"asmfmt", -- asm
 				"pylint",
 				"eslint_d",
 			},
