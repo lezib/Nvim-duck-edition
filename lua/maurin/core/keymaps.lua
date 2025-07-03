@@ -59,6 +59,7 @@ map("n", "<leader>y", '"+Y')
 map("v", "<leader>y", '"+y')
 map("n", "<leader>d", '"+D')
 map("v", "<leader>d", '"+D')
+map("n", "<leader>p", '"+p')
 
 -- NOTE : remap file Explorer
 map("n", "<leader>ee", "<cmd>Oil --float<CR>",{ desc = "Open" })
@@ -78,8 +79,10 @@ map("t", "<Esc>", "<C-\\><C-n>")
 map("n", "<leader>k", "zz",				{ desc = "Center view" })
 map("n", "G", "Gzz",					{ desc = "Go full down"})
 map("n", "<C-h>", vim.lsp.buf.hover,	{ desc = "analyse under cursor"})
--- =a{ indentation entre les {}
-map("i", "<C-BS>", "<Esc>dbxa",				{ desc = "delete whole word"}) -- use ctrl-Backspace to delete the whole word in insert mode
+
+-- use ctrl-Backspace to delete the whole word in insert mode
+--map("i", "<C-BS>", "<Esc>dbxavim.cmd(":wq!")",				{ desc = "delete whole word"})
+map("i", "<C-BS>", "<C-W>",				{ desc = "delete whole word"})
 
 -- NOTE : remap folding
 map("n", "<leader>s", "",									{ desc = "Fold" })
